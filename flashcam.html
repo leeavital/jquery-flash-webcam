@@ -16,7 +16,7 @@
         $('#stop-btn').attr('disabled', true);
         $('#play-btn').attr('disabled', false);
         $('#webcam').webcam({
-            videoName: 'video-test',
+            videoName: 'JQUERY_TEST_VIDYA',
             onConnected: function() {
                 $('#record-btn').attr('disabled', false);
             },
@@ -45,7 +45,7 @@
             },
             width: 320,
             height: 240,
-            serverUrl: 'rtmp://localhost/myapp'
+            serverUrl: 'rtmp://idea2dev.main.ad.rit.edu/usercontent'
         });
 
         $('#record-btn').click(function() {
