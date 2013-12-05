@@ -103,6 +103,9 @@ package {
                 statusTimer.addEventListener(TimerEvent.TIMER, pollStatus);
                 statusTimer.start();
                 ExternalInterface.call('serverConnected');
+
+                initRecord();
+
                 break;
             case 'NetConnection.Connect.Failed':
             case 'NetConnection.Connect.Reject':
