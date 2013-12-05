@@ -104,6 +104,8 @@ package {
                 statusTimer.start();
                 ExternalInterface.call('serverConnected');
 
+                // attach the camera to the current video, this doesn't actually start the recording. It just 
+                // shows the input from the camera to the user
                 initRecord();
 
                 break;
@@ -152,6 +154,7 @@ package {
             ns.attachCamera(Camera.getCamera());
             ns.attachAudio(Microphone.getMicrophone(-1));
             remoteVideo.attachCamera(Camera.getCamera());
+            
             addChild(remoteVideo);
             currentVideo = remoteVideo;
 
